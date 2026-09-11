@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
 	  <div className={styles.cardContent}>
 		<h3>{project.title}</h3>
 		<p>{project.description}</p>
-		<Link href={`/projects/${project.slug}`}><a>Read more</a></Link>
+		<Link href={`/projects/${project.slug}`}>Read more</Link>
 	  </div>
 	</article>
   )
