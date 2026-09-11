@@ -7,7 +7,8 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "deploy:ghpages": "npm run build && npm run export"
+    "deploy:ghpages": "npm run build && npm run export",
+    "generate-resume": "node scripts/generate-resume.js"
   },
   "dependencies": {
     "next": "14.2.0",
