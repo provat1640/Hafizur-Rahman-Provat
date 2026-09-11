@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "sample-project-1",
+    "title": "Sample Project 1",
+    "description": "A short description of sample project 1.",
+    "image": "/placeholder.svg",
+    "link": "https://example.com"
+  },
+  {
+    "slug": "sample-project-2",
+    "title": "Sample Project 2",
+    "description": "A short description of sample project 2.",
+    "image": "/placeholder.svg",
+    "link": "https://example.com"
+  }
+]
