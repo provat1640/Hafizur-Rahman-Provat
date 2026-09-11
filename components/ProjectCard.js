@@ -9,7 +9,7 @@ export default function ProjectCard({ project }) {
 	  <div className={styles.cardContent}>
 		<h3>{project.title}</h3>
 		<p>{project.description}</p>
-		<Link href={sitePath(`projects/${project.slug}`)}>Read more</Link>
+		<Link href={`/projects/${project.slug}`}>Read more</Link>
 	  </div>
 	</article>
   )
