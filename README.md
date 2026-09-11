@@ -3,13 +3,13 @@ Portfolio Website.Available worldwide, 24/7, forever free.
 
 # Next.js Portfolio (Static Export)
 
-This repository contains a Next.js portfolio site scaffold configured for static export (next export) so it can be published to GitHub Pages.
+This repository contains a Next.js portfolio site scaffold configured for static export (`output: 'export'`) so it can be published to GitHub Pages.
 
 ## Getting started
 
 1. Install dependencies: `npm install`
 2. Run development server: `npm run dev`
-3. Build and export: `npm run build && npm run export`
+3. Build and export: `npm run build`
 
 When exported, the static files are placed in the `out/` directory. The included GitHub Actions workflow will build and publish `out/` to the `gh-pages` branch on push to `main`.
 
