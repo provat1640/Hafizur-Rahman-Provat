@@ -11,7 +11,7 @@ This repository contains a Next.js portfolio site scaffold configured for static
 2. Run development server: `npm run dev`
 3. Build and export: `npm run build`
 
-When exported, the static files are placed in the `out/` directory. The included GitHub Actions workflow will build and publish `out/` to the `gh-pages` branch on push to `main`.
+The production build generates static files in the `out/` directory. The included GitHub Actions workflow publishes `out/` to the `gh-pages` branch on push to `main`.
 
 ## What I need from you
 
@@ -32,4 +32,10 @@ Resume:
 
 ## Deploy notes (GitHub Pages)
 
-If you host at a project site (`https://username.github.io/repo-name`) you will need to set `basePath` and `assetPrefix` in `next.config.js` to `/repo-name` and adjust links accordingly.
+The canonical GitHub Pages project URL is:
+
+`https://provat1640.github.io/Hafizur-Rahman-Provat/`
+
+The repository is already configured with `basePath` and `assetPrefix` for this URL. In GitHub repository settings, open **Pages** and select `gh-pages` as the branch with `/ (root)` as the folder.
+
+The domain `msrongbahar.me` currently redirects to a separate Vercel deployment that returns 404. Do not use that address unless its Vercel project is connected to this repository, or remove the custom-domain setting from GitHub Pages.

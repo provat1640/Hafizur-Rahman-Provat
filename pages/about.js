@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import CertificationList from '../components/CertificationList'
+import { sitePath } from '../lib/site'
 
 const certs = [
   { title: 'Netcom Learning AgentX Certification', issuer: 'Netcom Learning', file: '/certs/netcom-agentx.pdf' },
@@ -28,7 +29,7 @@ export default function About() {
 		<h3>Strengths</h3>
 	  <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
 		<div style={{ flex: 1 }}>
-		  <img src="/images/skills.jpg" alt="Strengths" style={{ width: '100%', height: 'auto', borderRadius: 6 }} />
+			<img src={sitePath('images/skills.jpg')} alt="Strengths" style={{ width: '100%', height: 'auto', borderRadius: 6 }} />
 		</div>
 		<div style={{ flex: 1 }}>
 		  <h4>Highlights</h4>

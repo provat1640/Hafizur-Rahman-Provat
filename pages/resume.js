@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import { sitePath } from '../lib/site'
 
 export default function Resume() {
   return (
@@ -38,7 +39,7 @@ Bachelor of Science, Computer Software Engineering`}
 	  </pre>
 
 	  <p>
-		<a href="/resume.txt" download>Download resume (text)</a>
+		<a href={sitePath('resume.txt')} download>Download resume (text)</a>
 	  </p>
 	  <h3>Education</h3>
 	  <ul>

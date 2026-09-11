@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout'
 import projects from '../../data/projects.json'
+import { sitePath } from '../../lib/site'
 
 export async function getStaticPaths() {
   const paths = projects.map((p) => ({ params: { slug: p.slug } }))
@@ -17,7 +18,7 @@ export default function ProjectPage({ project }) {
   return (
 	<Layout title={`${project.title} - Project`}>
 	  <h2>{project.title}</h2>
-	  <img src={project.image || '/placeholder.svg'} alt={project.title} style={{ maxWidth: '100%', height: 'auto' }} />
+	  <img src={sitePath(project.image || 'placeholder.svg')} alt={project.title} style={{ maxWidth: '100%', height: 'auto' }} />
 	  <p>{project.description}</p>
 	  {project.link && (
 		<p>

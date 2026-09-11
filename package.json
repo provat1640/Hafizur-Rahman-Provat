@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
+    "export": "next build",
     "start": "next start",
-    "deploy:ghpages": "npm run build && npm run export",
+    "deploy:ghpages": "npm run build",
     "generate-resume": "node scripts/generate-resume.js"
   },
   "dependencies": {
