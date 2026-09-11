@@ -1,9 +1,9 @@
 # Hafizur-Rahman-Provat
 Portfolio Website.Available worldwide, 24/7, forever free.
 
-# Next.js Portfolio (Static Export)
+# Hafizur Rahman — Portfolio
 
-This repository contains a Next.js portfolio site scaffold configured for static export (`output: 'export'`) so it can be published to GitHub Pages.
+This repository contains Hafizur Rahman’s portfolio website, configured as a static Next.js export for GitHub Pages and the custom domain `msrongbahar.me`.
 
 ## Getting started
 
@@ -11,7 +11,7 @@ This repository contains a Next.js portfolio site scaffold configured for static
 2. Run development server: `npm run dev`
 3. Build and export: `npm run build`
 
-The production build generates static files in the `out/` directory. The included GitHub Actions workflow publishes `out/` to the `gh-pages` branch on push to `main`.
+The production build generates static files in the `out/` directory. The GitHub Actions workflow publishes `out/` to the `gh-pages` branch whenever `main` is updated.
 
 ## What I need from you
 
@@ -32,10 +32,10 @@ Resume:
 
 ## Deploy notes (GitHub Pages)
 
-The canonical GitHub Pages project URL is:
+The canonical portfolio URL is:
 
-`https://provat1640.github.io/Hafizur-Rahman-Provat/`
+`https://msrongbahar.me/`
 
-The repository is already configured with `basePath` and `assetPrefix` for this URL. In GitHub repository settings, open **Pages** and select `gh-pages` as the branch with `/ (root)` as the folder.
+The build is configured for root-domain hosting and includes `public/CNAME`. In GitHub repository settings, open **Pages**, select `gh-pages` as the branch with `/ (root)` as the folder, and set the custom domain to `msrongbahar.me`.
 
-The domain `msrongbahar.me` currently redirects to a separate Vercel deployment that returns 404. Do not use that address unless its Vercel project is connected to this repository, or remove the custom-domain setting from GitHub Pages.
+The domain must no longer be assigned to the unrelated Vercel “M/S Rong Bahar” project. Remove that domain from Vercel or point the domain DNS to GitHub Pages. For an apex domain, configure the DNS provider with GitHub Pages’ current A records; for `www`, configure a CNAME to `provat1640.github.io` and redirect the apex as appropriate.
